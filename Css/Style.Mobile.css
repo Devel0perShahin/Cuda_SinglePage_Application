@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1040px) {
     html {
-        font-size: 50%;
+        font-size: 55%;
     }
 
     .Brand {
@@ -134,7 +134,7 @@
 
 @media only screen and (max-width: 480px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
     }
     .Container {
         width: 100%;

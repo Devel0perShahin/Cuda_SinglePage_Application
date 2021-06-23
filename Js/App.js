@@ -36,6 +36,8 @@ window.addEventListener("scroll", function () {
             Active_li.classList.remove("Active");
         }
     }
+
+    // CALLING "ACTIVE AREA" FUNCTIONS
     Active_area(Home_arya,Services_arya,List_items[0]);
     Active_area(Services_arya,Team_arya,List_items[1]);
     Active_area(Team_arya,Skill_arya,List_items[2]);
@@ -44,7 +46,7 @@ window.addEventListener("scroll", function () {
     Active_area(Testimonial_arya,Contact_arya,List_items[5]);
     Active_area(Contact_arya,Footer_area,List_items[6]);
 
-})
+});
 
 
 // END ACTIVE NAV
