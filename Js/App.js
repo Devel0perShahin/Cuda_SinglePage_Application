@@ -145,6 +145,9 @@ $(function () {
     }).trigger('scroll');
 
 
+    
+    
+//    =================================================
     // Add smooth scrolling to all links
     $(".List_items a").on('click', function (event) {
 
