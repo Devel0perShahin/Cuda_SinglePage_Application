@@ -28,24 +28,24 @@ let Footer_area = document.querySelector(".Footer_arya").offsetTop;
 
 window.addEventListener("scroll", function () {
 
-    let Top = window.scrollY ;
+    let Top = window.scrollY;
 
-    function Active_area(ST_area,EN_area,Active_li){
-        if(Top >= ST_area & Top < EN_area){
+    function Active_area(ST_area, EN_area, Active_li) {
+        if (Top >= ST_area & Top < EN_area) {
             Active_li.classList.add("Active");
-        }else{
+        } else {
             Active_li.classList.remove("Active");
         }
     }
 
     // CALLING "ACTIVE AREA" FUNCTIONS
-    Active_area(Home_arya,Services_arya,List_items[0]);
-    Active_area(Services_arya,Team_arya,List_items[1]);
-    Active_area(Team_arya,Skill_arya,List_items[2]);
-    Active_area(Skill_arya,Portfolio_arya,List_items[3]);
-    Active_area(Portfolio_arya,Testimonial_arya,List_items[4]);
-    Active_area(Testimonial_arya,Contact_arya,List_items[5]);
-    Active_area(Contact_arya,Footer_area,List_items[6]);
+    Active_area(Home_arya, Services_arya, List_items[0]);
+    Active_area(Services_arya, Team_arya, List_items[1]);
+    Active_area(Team_arya, Skill_arya, List_items[2]);
+    Active_area(Skill_arya, Portfolio_arya, List_items[3]);
+    Active_area(Portfolio_arya, Testimonial_arya, List_items[4]);
+    Active_area(Testimonial_arya, Contact_arya, List_items[5]);
+    Active_area(Contact_arya, Footer_area, List_items[6]);
 
 });
 
@@ -104,7 +104,16 @@ var mixer = mixitup(containerEl, {
         toggleLogic: 'and'
     }
 });
+// =====================================
+let Header = document.querySelector(".Header");
+let Header_text = document.querySelector(".Content h1");
 
+if (Header.style.height < 500) {
+    Header.style.cssText = "height:500px"
+} else {
+    Header.style.cssText = "height:85vh"
+}
+// =======================================
 
 
 
@@ -146,9 +155,9 @@ $(function () {
     }).trigger('scroll');
 
 
-    
-    
-//    =================================================
+
+
+    //    =================================================
     // Add smooth scrolling to all links
     $(".List_items a").on('click', function (event) {
 
